@@ -1,0 +1,75 @@
+<mat-grid-list cols="1" rowHeight="1:1">
+  <img src="../assets/navbar.JPG" id="nv">
+</mat-grid-list>
+<mat-grid-list id="land" cols="12" rowHeight="600px">
+  <mat-grid-tile colspan="2">
+    <img src="../assets/leftpanel.JPG"  id="lp1">
+  </mat-grid-tile>
+  <!-- Card start-->
+  <mat-grid-tile id="main" colspan="5" style="overflow-y: scroll; margin-left: -40px;">
+     <div> <img src="../assets/newsfeedupper.jpg" id="news">
+    
+     <mat-card class="example-card">
+          <mat-card-header>
+            <div id="ava" mat-card-avatar class="example-header-image"></div>
+            <mat-card-title id="title">
+                <h5>
+                  <span style="color:#4267B2;">Shiba Inu
+                   is <span style="color: #868A91;">shared</span> a post </span>
+                </h5>
+              </mat-card-title>
+             
+            <mat-card-subtitle><h5 style="color:grey;">June 3.</h5></mat-card-subtitle>
+          </mat-card-header>
+          <img id="img" mat-card-image src="../assets/kim.jpg" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+              <div>      
+                <p id="p"><b id="des">PoliticRecent.COM</b>
+                    <span id="mcvalue"  [ngClass]="{'bg-green': status == 'true', 'bg-yellow': status == 'Patially fake', 'bg-red': status == 'Completely fake', 'bg-emp': status == 'null'}">McClatchy Verified {{ status }}</span>
+                    <br><br>
+                    Kim Jong Un called President Trump for discussions
+              </p>
+                  
+              </div>
+            
+            <img src="../assets/label.JPG" id="label">
+          </mat-card-content>
+        </mat-card>
+    
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div id="ava" mat-card-avatar class="example-header-image"></div>
+              <mat-card-title id="title">
+                  <h5>
+                    <span style="color:#4267B2;">Shiba Inu
+                     is <span style="color: #868A91;">shared</span> a post </span>
+                  </h5>
+                </mat-card-title>
+               
+              <mat-card-subtitle><h5>5 hrs.</h5></mat-card-subtitle>
+            </mat-card-header>
+            <img id="img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <div>      
+                  <p id="p"><b id="des">TECHCRUNCH.COM</b>
+                      <!-- <span id="mcvalue">McClatchy Verified True</span> -->
+                      <br><br>
+                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                </p>
+                    
+                </div>
+              
+              <img src="../assets/label.JPG" id="label">
+            </mat-card-content>
+          </mat-card>
+
+         </div> 
+  </mat-grid-tile>
+  <!-- Card End-->
+  <mat-grid-tile colspan="3" style="margin-left: 0px" id="rp01">
+    <img src="../assets/rightpanel1.JPG" id="rp1">
+  </mat-grid-tile>
+  <mat-grid-tile colspan="2">
+    <img src="../assets/rightpanel2.JPG" id="rp2">
+  </mat-grid-tile>
+</mat-grid-list>

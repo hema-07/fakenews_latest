@@ -1,0 +1,91 @@
+#nv{
+height: 43px;
+width: 100%;
+}
+#lp1{
+height: 100%;
+/* width: 190px; */
+margin-top: 20px;
+margin-left: 0px;
+}
+#rp1{
+    /* margin-left: -40px; */
+    height: 100%;
+    width: 100%;
+}
+#rp2{
+    height: 100%;
+}
+#land{
+    background-color:#E9EBEE;
+}
+.example-card {
+    width: 100%;
+    margin-left: 25px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  p{
+      font-size: 12px;
+      text-align: left;
+  }
+  #news{
+      margin-top: 650px;
+      margin-left: 20px;
+      width: 100%;
+  }
+
+#title{
+      margin-top:-30px;
+      
+  }
+  #img{
+      height: 260px;
+      width: 100%;
+  }
+  #label{
+      width:90%;
+      height: 40px;
+      margin-left: -10px;
+      
+  }
+  #ava{
+    margin-top: -15px;
+    margin-left: -15px;
+  }
+  #mcvalue{
+    margin-right: 75px;
+    float: right;
+    color: white;
+    padding:5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+#p{
+    color: rgb(40, 45, 51);
+}
+/* ::-webkit-scrollbar {
+    display: none;
+    } */
+    #des{
+        color: #8D949E;
+    }
+
+    .bg-red{
+        background: rgb(192, 12, 12);
+    }
+
+    .bg-yellow{
+        background: rgb(214, 214, 10);
+    }
+
+    .bg-green{
+        background: green;
+    }
+    .bg-emp{
+        background: none;
+    }
