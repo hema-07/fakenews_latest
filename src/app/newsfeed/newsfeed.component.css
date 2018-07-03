@@ -29,11 +29,11 @@ margin-left: 0px;
     background-size: cover;
   }
   p{
-      font-size: 12px;
+      font-size: 14px;
       text-align: left;
   }
   #news{
-      margin-top: 650px;
+      margin-top: 890px;
       margin-left: 20px;
       width: 100%;
   }
@@ -43,12 +43,12 @@ margin-left: 0px;
       
   }
   #img{
-      height: 260px;
+      height: 350px;
       width: 100%;
   }
   #label{
       width:90%;
-      height: 40px;
+      height: 42px;
       margin-left: -10px;
       
   }
@@ -61,18 +61,26 @@ margin-left: 0px;
     float: right;
     color: white;
     padding:5px;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
     text-align: center;
 }
+h4{
+    font-size: 14px;
+}
+#para{
+    width: 90%;
+}
 #p{
     color: rgb(40, 45, 51);
+   
 }
 /* ::-webkit-scrollbar {
     display: none;
     } */
     #des{
         color: #8D949E;
+        font-size: 20px;
     }
 
     .bg-red{

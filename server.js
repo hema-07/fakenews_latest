@@ -11,14 +11,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
 //Angular dist output folder to serve all static files
-app.use(express.static(path.join(__dirname,'dist/app-v6')));
+app.use(express.static(path.join(__dirname,'dist/my-app')));
 
 
 app.use('/',(req, res, next) => {
   console.log('inside routes');
   next();
-  request.get('http://localhost:3000/getStatus', (req, res) => {
-    console.log(' -- > ', req.body);
+  request.get('http://mcclatchyv2.cfapps.io/getStatus', (req, res) => {
+    // console.log(' -- > ', req.body);
   });
 });
 
@@ -26,7 +26,7 @@ app.use('/',(req, res, next) => {
 
 // Send all other requests to Angular app
 app.get('*',(req,res)=>{
-  res.sendFile(path.join(__dirname,'dist/app-v6/index.html'));
+  res.sendFile(path.join(__dirname,'dist/my-app/index.html'));
 });
 
 const  PORT = process.env.PORT || 3003

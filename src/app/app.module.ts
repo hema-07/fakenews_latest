@@ -4,15 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { Material } from './material.module';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, provideRoutes, Router } from '@angular/router';
 import { NewsfeedComponent } from './newsfeed/newsfeed.component'; 
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
-// import { ConfigService } from '../config/config.service';
+
 const appRoutes: Routes = [
+  { path:'', redirectTo:'/login', pathMatch: 'full' },
   { path: 'login', component: HomeComponent },
   { path: 'newsfeed', component: NewsfeedComponent}
-]
+];
+// export const appRouterProvider = [
+//   provideRoutes(appRoutes)
+// ];
 
 @NgModule({
   declarations: [

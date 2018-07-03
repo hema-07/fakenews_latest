@@ -1,7 +1,0 @@
----
-applications:
-        - name: newsfeed1
-          buildpack: staticfile_buildpack
-          path: ./dist/my-app
-          memory: 64M
-          instances: 1
