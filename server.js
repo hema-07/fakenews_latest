@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname,'dist/my-app')));
 app.use('/',(req, res, next) => {
   console.log('inside routes');
   next();
-  request.get('http://mcclatchyv2.cfapps.io/getStatus', (req, res) => {
+  request.get('http://mcclatchyapp.cfapps.io:3000/getStatus', (req, res) => {
     // console.log(' -- > ', req.body);
   });
 });

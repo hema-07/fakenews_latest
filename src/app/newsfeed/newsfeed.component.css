@@ -31,13 +31,20 @@ margin-left: 0px;
   p{
       font-size: 14px;
       text-align: left;
+   
+  }
+  h3, p, div
+  {
+    font-family: 'Calibri';
   }
   #news{
-      margin-top: 890px;
+      margin-top: 970px;
       margin-left: 20px;
       width: 100%;
   }
-
+#main{
+    background-color: white;
+}
 #title{
       margin-top:-30px;
       
@@ -48,20 +55,24 @@ margin-left: 0px;
   }
   #label{
       width:90%;
-      height: 42px;
+      height: 93px;
       margin-left: -10px;
       
   }
+  #label1{
+    width:90%;
+    height: 42px;
+    margin-left: -10px;
+    
+}
   #ava{
     margin-top: -15px;
     margin-left: -15px;
   }
   #mcvalue{
-    margin-right: 75px;
+    margin-right: 50px;
     float: right;
-    color: white;
-    padding:5px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
 }
@@ -85,15 +96,80 @@ h4{
 
     .bg-red{
         background: rgb(192, 12, 12);
+        color: white;
+        padding:5px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
     }
 
     .bg-yellow{
         background: rgb(214, 214, 10);
+        color: white;
+        padding:5px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
     }
 
     .bg-green{
         background: green;
+        padding:5px;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        
     }
+  
     .bg-emp{
-        background: none;
+        color:rgba(255, 255, 255, 0);
     }
+    .animate-show-hide.ng-hide {
+        opacity: 0;
+      }
+      
+    .check-element {
+        opacity: 1;
+      }
+#i{
+    padding-top: 2px;
+}
+     
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 10%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

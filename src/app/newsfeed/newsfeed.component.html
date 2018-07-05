@@ -6,67 +6,61 @@
     <img src="../assets/leftpanel.JPG"  id="lp1">
   </mat-grid-tile>
   <!-- Card start-->
-  <mat-grid-tile id="main" colspan="5" style="overflow-y: scroll; margin-left: -40px;">
+  <mat-grid-tile colspan="5" style="overflow-y: scroll; margin-left: -28px;">
      <div> <img src="../assets/newsfeedupper.jpg" id="news">
     
-     <mat-card class="example-card">
+     <mat-card  id="main" class="example-card">
           <mat-card-header>
             <div id="ava" mat-card-avatar class="example-header-image"></div>
             <mat-card-title id="title">
-                <h4>
-                  <span style="color:#4267B2;">Shiba Inu
+                <h3>
+                  <span style="color:#4267B2;">Camila
                    is <span style="color: #868A91;">shared</span> a post </span>
-                </h4>
+                </h3>
               </mat-card-title>
              
-            <mat-card-subtitle><h5 style="color:grey;">June 3.</h5></mat-card-subtitle>
+            <mat-card-subtitle><h4 style="color:grey;">3 June at 23:44</h4></mat-card-subtitle>
           </mat-card-header>
           <img id="img" mat-card-image src="../assets/kim.jpg" alt="Photo of a Shiba Inu">
           <mat-card-content>
               <div id="para">      
-                 
                 <p id="p">
-                  
                   <b id="des">scoopworld.com</b>
-                    <span id="mcvalue"  [ngClass]="{'bg-green': status == 'true', 'bg-yellow': status == 'Patially fake',
-                     'bg-red': status == 'Completely fake', 'bg-emp': status == 'null'}">
-                       {{ status }}</span>
-                    <br><br>
-                  
+                  <span id="mcvalue"  [ngClass]="{'bg-green': status1 == 'McClatchy Verified True', 'bg-yellow': status1 == 'McClatchy Verified Partially true',
+                  'bg-red': status1 == 'McClatchy Verified Fake', 'bg-emp': status == null}">
+                  {{ status1 }}&nbsp; <div class="tooltip"><img src="{{img}}" alt="i"><span class="tooltiptext">{{comments}}</span></div>
+                  </span>
+                    <br>
               </p>
               <h3>NASA Scientist just confirmed that a giant asteroid will destroy Earth in 2019</h3>
-               In a stunning revelation, a NASA scientist has just confirmed that a giant asteroid is expected to destroy Earth as we know it in 2019
-                  
+               In a stunning revelation, a NASA scientist has just confirmed that a giant asteroid is expected to destroy Earth as we know it in 2019 <a href="#">(Read More)</a>
               </div>
-            
+              <br>
             <img src="../assets/label.JPG" id="label">
           </mat-card-content>
         </mat-card>
     
-        <mat-card class="example-card">
+        <mat-card id="main" class="example-card">
             <mat-card-header>
               <div id="ava" mat-card-avatar class="example-header-image"></div>
               <mat-card-title id="title">
-                  <h4>
-                    <span style="color:#4267B2;">Shiba Inu
+                  <h3>
+                    <span style="color:#4267B2;">Camila
                      is <span style="color: #868A91;">shared</span> a post </span>
-                  </h4>
+                  </h3>
                 </mat-card-title>
                
-              <mat-card-subtitle><h5>5 hrs.</h5></mat-card-subtitle>
+              <mat-card-subtitle><h4>5 hrs.</h4></mat-card-subtitle>
             </mat-card-header>
             <img id="img" mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
             <mat-card-content>
                 <div id="para">      
                   <p id="p"><b id="des">TECHCRUNCH.COM</b>
-                      <!-- <span id="mcvalue">McClatchy Verified True</span> -->
-                      <br><br>
-                  The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
                 </p>
-                    
+                <h3>The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.</h3>
                 </div>
               
-              <img src="../assets/label.JPG" id="label">
+              <img src="../assets/label1.JPG" id="label1">
             </mat-card-content>
           </mat-card>
 
